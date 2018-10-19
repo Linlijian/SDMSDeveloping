@@ -49,7 +49,7 @@ namespace WEBAPP.Areas.Users.Controllers
 
         #endregion
 
-        #region View
+        #region View 
         public ActionResult Index()
         {
             ViewBag.UrlToClosePage = "";
