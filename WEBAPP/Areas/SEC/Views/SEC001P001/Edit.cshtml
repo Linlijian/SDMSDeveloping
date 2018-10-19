@@ -1,0 +1,48 @@
+﻿@using FluentBootstrap
+@using WEBAPP.Helper
+@using DataAccess
+@using DataAccess.SEC
+@using UtilityLib
+
+@model SEC001P001Model
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_LayoutChildPage.cshtml";
+}
+
+@using (var form = Html.Bootstrap().Form().SetId("form1").SetHorizontal().Begin())
+{
+
+    @form.ValidationSummary(true).AddCss(Css.Hidden)
+    @Html.AntiForgeryToken()
+    using (var rowInfo = Html.Bootstrap().GridRow().Begin())
+    {
+        using (rowInfo.GridColumn(12).SetXs(12).Begin())
+        {
+            using (var row1 = Html.Bootstrap().GridRow().Begin())
+            {
+                using (row1.GridColumn(6).Begin())
+                {
+                    @form.InputFor(t => t.TBL_NAME, isRequired: true).SetReadonly()
+                }
+                using (row1.GridColumn(6).Begin())
+                {
+                    @form.InputFor(t => t.TBL_TYPE)
+                }
+            }
+            using (var row1 = Html.Bootstrap().GridRow().Begin())
+            {
+                using (row1.GridColumn(6).Begin())
+                {
+                    @form.SelectFor(t => t.LOG_STATUS, Model.LOG_STATUS_MODEL.ToSelectList("Value", "Text", Model.LOG_STATUS))
+                }
+            }
+        }
+    }
+}
+@section modals{
+
+}
+@section Scripts {
+
+}

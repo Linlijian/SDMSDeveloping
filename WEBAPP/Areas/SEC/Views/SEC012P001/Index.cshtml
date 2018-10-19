@@ -1,0 +1,58 @@
+﻿@using FluentBootstrap
+@using WEBAPP.Helper
+@using DataAccess.SEC
+@using UtilityLib
+
+@model SEC012P001Model
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutChildPage.cshtml";
+}
+
+@using (var form = Html.Bootstrap().Form().SetId("form1").SetHorizontal().Begin())
+{
+    @Html.AntiForgeryToken()
+    using (var row = Html.Bootstrap().GridRow().Begin())
+    {
+        using (row.GridColumn(12).SetXs(12).Begin())
+        {
+            using (var r = Html.Bootstrap().GridRow().Begin())
+            {
+                using (r.GridColumn(6).Begin())
+                {
+                    @form.InputFor(m => m.FTP_SERVER, isRequired: true)
+                }
+            }
+            using (var r = Html.Bootstrap().GridRow().Begin())
+            {
+                using (r.GridColumn(6).Begin())
+                {
+                    @form.InputFor(m => m.FTP_PRT, isRequired: true)
+                }
+                using (r.GridColumn(6).Begin())
+                {
+                    @form.InputFor(m => m.FTP_FOLDER)
+                }
+            }
+            using (var r = Html.Bootstrap().GridRow().Begin())
+            {
+                using (r.GridColumn(6).Begin())
+                {
+                    @form.InputFor(m => m.USER_NAME, isRequired: true)
+                }
+                using (r.GridColumn(6).Begin())
+                {
+                    @form.PasswordFor(m => m.PASSWORD, isRequired: true)
+                }
+            }
+        }
+    }
+}
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#PASSWORD').val('@Model.PASSWORD');
+        });
+    </script>
+}

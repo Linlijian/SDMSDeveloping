@@ -1,0 +1,141 @@
+﻿@using FluentBootstrap
+@using WEBAPP.Helper
+@using DataAccess.SEC
+@using UtilityLib
+
+@model SEC006P001Model
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_LayoutChildPage.cshtml";
+}
+
+@using (var form = Html.Bootstrap().Form().SetId("form1").SetHorizontal().Begin())
+{
+    @Html.AntiForgeryToken()
+    using (var row = Html.Bootstrap().GridRow().Begin())
+    {
+        using (row.GridColumn(12).SetXs(12).Begin())
+        {
+            using (var r = Html.Bootstrap().GridRow().Begin())
+            {
+                using (r.GridColumn(6).Begin())
+                {
+                    @form.InputFor(m => m.USER_ID, isRequired: true).IsDisabled()
+                }
+            }
+
+            <fieldset>
+                <legend></legend>
+                @using (var r = Html.Bootstrap().GridRow().Begin())
+                {
+                    using (r.GridColumn(6).Begin())
+                    {
+                        @form.InputFor(m => m.USER_FNAME_TH, isRequired: true)
+                    }
+                    using (r.GridColumn(6).Begin())
+                    {
+                        @form.InputFor(m => m.USER_LNAME_TH)
+                    }
+                }
+
+                @using (var r = Html.Bootstrap().GridRow().Begin())
+                {
+                    using (r.GridColumn(6).Begin())
+                    {
+                        @form.InputFor(m => m.USER_FNAME_EN, isRequired: true)
+                    }
+                    using (r.GridColumn(6).Begin())
+                    {
+                        @form.InputFor(m => m.USER_LNAME_EN)
+                    }
+                }
+
+                @using (var r = Html.Bootstrap().GridRow().Begin())
+                {
+                    using (r.GridColumn(6).Begin())
+                    {
+                        @form.SelectFor(t => t.TITLE_ID, Model.TITLE_ID_MODEL.ToSelectList("Value", "Text", Model.TITLE_ID), isRequired: true)
+                    }
+                    using (r.GridColumn(6).Begin())
+                    {
+                        @form.SelectFor(t => t.USG_ID, Model.USG_ID_MODEL.ToSelectList("Value", "Text", Model.USG_ID), isRequired: true)
+                    }
+                }
+
+                @using (var r = Html.Bootstrap().GridRow().Begin())
+                {
+                    using (r.GridColumn(6).Begin())
+                    {
+                        @form.SelectFor(t => t.DEPT_ID, Model.DEPT_ID_MODEL.ToSelectList("Value", "Text", Model.DEPT_ID), isRequired: true)
+                    }
+                    using (r.GridColumn(6).Begin())
+                    {
+                        @form.InputFor(t => t.USER_SPEC_ID)
+                    }
+                }
+
+                @using (var r = Html.Bootstrap().GridRow().Begin())
+                {
+                    using (r.GridColumn(6).Begin())
+                    {
+                        @form.InputFor(t => t.TELEPHONE)
+                    }
+                    using (r.GridColumn(6).Begin())
+                    {
+                        @form.InputFor(t => t.EMAIL)
+                    }
+                }
+
+                @using (var r = Html.Bootstrap().GridRow().Begin())
+                {
+                    using (r.GridColumn(6).Begin())
+                    {
+                        @form.SelectFor(t => t.USER_STATUS, Model.USER_STATUS_MODEL.ToSelectList("Value", "Text", Model.USER_STATUS), isRequired: true)
+                    }
+                }
+
+                @using (var r = Html.Bootstrap().GridRow().Begin())
+                {
+                    using (r.GridColumn(6).Begin())
+                    {
+                        @form.CheckBoxFor(t => t.IS_DISABLED).SetControlLabel("Permission").AddContent(Translation.SEC.SEC006P001.IS_DISABLED_ADD)
+                    }
+                }
+
+            </fieldset>
+
+            <fieldset>
+                <legend></legend>
+                @using (var r = Html.Bootstrap().GridRow().Begin())
+                {
+                    using (r.GridColumn(12).Begin())
+                    {
+                        @Html.GetVSMMultiSelectFor(t => t.ComUserModel, "AC_VSMS_COMPANY_001", true, 2)
+                    }
+                }
+            </fieldset>
+        }
+
+
+    }
+}
+@section modals{
+    @Html.GetVSMMultiSelectModalFor(t => t.ComUserModel)
+}
+
+@section Scripts {
+    @Html.GetVSMMultiSelectScriptFor(
+        t => t.ComUserModel,
+        CustomControl.GetMultiSelectConfig(
+            "AC_VSMS_COMPANY_001",
+            new DefaultConfig("Bind_ComForUser"),
+            "COM_CODE",
+            "COM_NAME_E"
+        )
+    )
+
+    <script type="text/javascript">
+    </script>
+}
+

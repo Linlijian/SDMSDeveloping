@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C9FEF56-4859-4E9B-B726-073279DBD73E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccess</RootNamespace>
+    <AssemblyName>DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetZip">
+      <HintPath>..\packages\DotNetZip.1.10.1\lib\net20\DotNetZip.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WEBAPP\bin\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Dashboard\DashboardDA.cs" />
+    <Compile Include="Admin\Dashboard\DashboardDTO.cs" />
+    <Compile Include="Admin\Dashboard\DashboardModel.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SEC\SEC000P001\SEC000P001DA.cs" />
+    <Compile Include="SEC\SEC000P001\SEC000P001DTO.cs" />
+    <Compile Include="SEC\SEC000P001\SEC000P001Model.cs" />
+    <Compile Include="SEC\SEC001P001\SEC001P001DA.cs" />
+    <Compile Include="SEC\SEC001P001\SEC001P001DTO.cs" />
+    <Compile Include="SEC\SEC001P001\SEC001P001Model.cs" />
+    <Compile Include="SEC\SEC002P001\SEC002P001DA.cs" />
+    <Compile Include="SEC\SEC002P001\SEC002P001DTO.cs" />
+    <Compile Include="SEC\SEC002P001\SEC002P001Model.cs" />
+    <Compile Include="SEC\SEC003P001\SEC003P001DA.cs" />
+    <Compile Include="SEC\SEC003P001\SEC003P001DTO.cs" />
+    <Compile Include="SEC\SEC003P001\SEC003P001Model.cs" />
+    <Compile Include="SEC\SEC004P001\SEC004P001DA.cs" />
+    <Compile Include="SEC\SEC004P001\SEC004P001DTO.cs" />
+    <Compile Include="SEC\SEC004P001\SEC004P001Model.cs" />
+    <Compile Include="SEC\SEC005P001\SEC005P001DA.cs" />
+    <Compile Include="SEC\SEC005P001\SEC005P001DTO.cs" />
+    <Compile Include="SEC\SEC005P001\SEC005P001Model.cs" />
+    <Compile Include="SEC\SEC006P001\SEC006P001DA.cs" />
+    <Compile Include="SEC\SEC006P001\SEC006P001DTO.cs" />
+    <Compile Include="SEC\SEC006P001\SEC006P001Model.cs" />
+    <Compile Include="SEC\SEC007P001\SEC007P001DA.cs" />
+    <Compile Include="SEC\SEC007P001\SEC007P001DTO.cs" />
+    <Compile Include="SEC\SEC007P001\SEC007P001Model.cs" />
+    <Compile Include="SEC\SEC008P001\SEC008P001DA.cs" />
+    <Compile Include="SEC\SEC008P001\SEC008P001DTO.cs" />
+    <Compile Include="SEC\SEC008P001\SEC008P001Model.cs" />
+    <Compile Include="SEC\SEC011P001\SEC011P001DA.cs" />
+    <Compile Include="SEC\SEC011P001\SEC011P001DTO.cs" />
+    <Compile Include="SEC\SEC011P001\SEC011P001Model.cs" />
+    <Compile Include="SEC\SEC012P001\SEC012P001DA.cs" />
+    <Compile Include="SEC\SEC012P001\SEC012P001DTO.cs" />
+    <Compile Include="SEC\SEC012P001\SEC012P001Model.cs" />
+    <Compile Include="SEC\SEC014P001\SEC014P001DA.cs" />
+    <Compile Include="SEC\SEC014P001\SEC014P001DTO.cs" />
+    <Compile Include="SEC\SEC014P001\SEC014P001Model.cs" />
+    <Compile Include="SEC\SEC015P001\SEC015P001DA.cs" />
+    <Compile Include="SEC\SEC015P001\SEC015P001DTO.cs" />
+    <Compile Include="SEC\SEC015P001\SEC015P001Model.cs" />
+    <Compile Include="SEC\SECBase\MenuModel.cs" />
+    <Compile Include="SEC\SECBase\SECBaseDA.cs" />
+    <Compile Include="SEC\SECBase\SECBaseDTO.cs" />
+    <Compile Include="Users\ModuleModel.cs" />
+    <Compile Include="Users\UserDA.cs" />
+    <Compile Include="Users\UserDTO.cs" />
+    <Compile Include="Users\UserModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBConnectionBase\DBConnectionBase.csproj">
+      <Project>{7c6db22e-221f-4bf6-ba18-43a5354e805d}</Project>
+      <Name>DBConnectionBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FluentValidation.Mvc5\FluentValidation.Mvc5.csproj">
+      <Project>{23e384ef-5a39-4d73-a8d5-ef48c71c128f}</Project>
+      <Name>FluentValidation.Mvc5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FluentValidation\FluentValidation.csproj">
+      <Project>{dae0249b-4f69-4ac9-9a17-aa23e0795316}</Project>
+      <Name>FluentValidation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Translation\Translation.csproj">
+      <Project>{d707ae3d-62d8-44f9-9072-be01a0c05da9}</Project>
+      <Name>Translation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UtilityLib\UtilityLib.csproj">
+      <Project>{053ee5bc-b34e-4dd0-8e5b-ac22d4e41102}</Project>
+      <Name>UtilityLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

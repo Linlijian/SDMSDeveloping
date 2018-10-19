@@ -1,0 +1,59 @@
+﻿ERROR 2018-10-03 00:13:11,303 AccountController.SignIn2 - The network path was not found
+ERROR 2018-10-03 00:39:17,174 AccountController.SignIn2 - The network path was not found
+ERROR 2018-10-03 00:43:56,368 AccountController.SignIn2 - The network path was not found
+ERROR 2018-10-13 02:57:21,360 AccountController.SignIn2 - Cannot open database "CFZDB" requested by the login. The login failed.
+Login failed for user 'sa'.
+ERROR 2018-10-13 02:58:31,800 AccountController.SignIn2 - Cannot open database "CFZDB" requested by the login. The login failed.
+Login failed for user 'sa'.
+ERROR 2018-10-13 03:01:04,866 AccountController.SignIn2 - Cannot open database "CFZDB" requested by the login. The login failed.
+Login failed for user 'sa'.
+ERROR 2018-10-13 03:21:26,041 AccountController.SignIn2 - Cannot open database "CFZDB" requested by the login. The login failed.
+Login failed for user 'sa'.
+ERROR 2018-10-13 03:21:54,744 BaseController.OnException - 
+Path : Users/Account/SignIn
+Error Messages: Bad JSON escape sequence: \S. Path '[0].ConnectionString', line 5, position 45.
+
+ERROR 2018-10-13 03:25:01,099 BaseController.OnException - 
+Path : Users/Account/SignIn2
+Error Messages: Bad JSON escape sequence: \S. Path '[0].ConnectionString', line 5, position 45.
+
+ERROR 2018-10-13 03:27:43,456 BaseController.OnException - 
+Path : Users/Account/SelectModule
+Error Messages: Object reference not set to an instance of an object.
+
+ERROR 2018-10-13 03:33:43,932 BaseController.OnException - 
+Path : Users/Account/SelectModule
+Error Messages: Object reference not set to an instance of an object.
+
+ERROR 2018-10-13 03:35:09,835 BaseController.OnException - 
+Path : Users/Account/SelectModule
+Error Messages: Object reference not set to an instance of an object.
+
+ERROR 2018-10-13 03:35:35,267 BaseController.OnException - 
+Path : Users/Account/SelectModule
+Error Messages: Object reference not set to an instance of an object.
+
+ERROR 2018-10-13 03:39:14,529 BaseController.OnException - 
+Path : Users/Account/SelectModule
+Error Messages: Object reference not set to an instance of an object.
+
+ERROR 2018-10-13 03:42:28,289 BaseController.OnException - 
+Path : Admin/Default/Index
+Error Messages: Value cannot be null.
+Parameter name: source
+
+ERROR 2018-10-13 03:43:46,502 BaseController.OnException - 
+Path : Admin/Default/Index
+Error Messages: Value cannot be null.
+Parameter name: source
+
+ERROR 2018-10-17 19:21:25,494 BaseController.OnException - 
+Path : SEC/SEC006P001/Add
+Error Messages: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+ERROR 2018-10-17 19:21:42,895 BaseController.OnException - 
+Path : SEC/SEC006P001/Edit
+Error Messages: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+

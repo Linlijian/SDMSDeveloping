@@ -1,0 +1,18 @@
+﻿[
+  {
+    "Comment": "Connection",
+    "Name": "Connection",
+    //"ConnectionString": "Data Source=10.60.5.166;Persist Security Info=True;User ID=sa;Password=P@ssw0rd;Initial Catalog=SDDB"
+    "ConnectionString": "Data Source=LIN-PK;Persist Security Info=True;User ID=sa;Password=P@ssw0rd;Initial Catalog=SDDB"
+  },
+  {
+    "Comment": "Connection Of Entities",
+    "Name": "AATEntities",
+    "ConnectionString": "metadata=res://*/ModelManger.csdl|res://*/ModelManger.ssdl|res://*/ModelManger.msl;provider=System.Data.SqlClient;provider connection string=\"{tpConnectionString};MultipleActiveResultSets=True;App=EntityFramework\""
+  },
+  {
+    "Comment": "Server DB Name",
+    "Name": "WIN-GD24EEJ5ODK",
+    "ConnectionString": "WIN-GD24EEJ5ODK_DEV"
+  }
+]

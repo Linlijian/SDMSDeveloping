@@ -1,0 +1,268 @@
+﻿[
+  {
+    "Comment": "Example 1",
+    "Key": "SEC002TP001",
+    "Value": "SEC/SEC002TP001.xlsx"
+  },
+  {
+    "Comment": "Example 2",
+    "Key": "XXX2",
+    "Value": "XXX2.xlsx"
+  },
+  {
+    "Comment": "Part Info",
+    "Key": "ZQM010TP001",
+    "Value": "MAS/ZQM010TP001.xlsx"
+  },
+  {
+    "Comment": "Part Privilege And Certificate Control",
+    "Key": "ZQM034TP001",
+    "Value": "MAS/ZQM034TP001.xlsx"
+  },
+  {
+    "Comment": "Product Code Master(Production)",
+    "Key": "ZRH140TP001",
+    "Value": "MAS/ZRH140TP001.xlsx"
+  },
+  {
+    "Comment": "Product Code Master (Bailment) ",
+    "Key": "ZRH150TP001",
+    "Value": "MAS/ZRH150TP001.xlsx"
+  },
+  {
+    "Comment": "Part Price Information ",
+    "Key": "ZQM033TP001",
+    "Value": "MAS/ZQM033TP001.xlsx"
+  },
+  {
+    "Comment": "Part Weight Maintenance",
+    "Key": "ZQM026TP001",
+    "Value": "MAS/ZQM026TP001.xlsx"
+  },
+  {
+    "Comment": "Production Plan Line Off ",
+    "Key": "ZQA807TP001",
+    "Value": "SLS/ZQA807TP001.xlsx"
+  },
+  {
+    "Comment": "Import Invoice Information Maintenance ",
+    "Key": "ZVG821TP001",
+    "Value": "InbAsn/ZVG821TP001.xlsx"
+  },
+  {
+    "Comment": "Upload Certificate from Excel ",
+    "Key": "ZVG821TP003",
+    "Value": "InbAsn/ZVG821TP003.xlsx"
+  },
+  {
+    "Comment": "Customs Invoice Information Maintenance ",
+    "Key": "ZVG840TP001",
+    "Value": "InbAsn/ZVG840TP001.xlsx"
+  },
+  {
+    "Comment": "Production Line off Maintenance ",
+    "Key": "ZQA802TP001",
+    "Value": "SLS/ZQA802TP001.xlsx"
+  },
+  {
+    "Comment": "Sale Invoice Maintenance ",
+    "Key": "ZQA801TP001",
+    "Value": "SLS/ZQA801TP001.xlsx"
+  },
+  {
+    "Comment": "Generate Daliy Stock Process ",
+    "Key": "ZQA803TP001",
+    "Value": "DTP/ZQA801TP003.xlsx"
+  },
+  {
+    "Comment": "Part Information for CN77",
+    "Key": "ZQM701P01",
+    "Value": "GPU/ZQM701TP01.xlsx"
+  },
+  {
+    "Comment": "Actual receive data KD1 Maintenance",
+    "Key": "IF_MST_KID001TP",
+    "Value": "TRFP/IF_MST_KID001TP.xlsx"
+  },
+  {
+    "Comment": "Production forecast by Monthly maintenance",
+    "Key": "J03FML001TP",
+    "Value": "LCFML/J03FML001TP.xlsx"
+  },
+  {
+    "Comment": "Production forecast(LP) by weekly maintenance",
+    "Key": "J03FWL001TP",
+    "Value": "LCFWL/J03FWL001TP.xlsx"
+  },
+  {
+    "Comment": "Maintenance Generate percentage of production forecast(LP) by weekly ",
+    "Key": "J03FWL006TP",
+    "Value": "LCFWL/J03FWL006TP.xlsx"
+  },
+  {
+    "Comment": "ZQA818P03P_InterfaceFormat ",
+    "Key": "ZQA818P001",
+    "Value": "SCP01/ZQA818P03TP.xlsx"
+  },
+  {
+    "Comment": "Supplier Information Master (LP)",
+    "Key": "ASPMAS001P",
+    "Value": "GENASP/ASPMAS001TP.xlsx"
+  },
+  {
+    "Comment": "Customs invoice data maintenance",
+    "Key": "ASPCUS005TP",
+    "Value": "GENASP/ASPCUS005TP.xlsx"
+  },
+  {
+    "Comment": "Part Information Master for Generate ASP",
+    "Key": "ASPMAS002TP",
+    "Value": "GENASP/ASPMAS002TP.xlsx"
+  },
+  {
+    "Comment": "Part Information for control privileg(LP) maintenance ",
+    "Key": "J03FWL003TP",
+    "Value": "LCFWL/J03FWL003TP.xlsx"
+  },
+  {
+    "Comment": "ASP data maintenance by weekly  ",
+    "Key": "ASPCUS002TP",
+    "Value": "GENASP/ASPCUS002TP.xlsx"
+  },
+  {
+    "Comment": "Scrap part maintenace [Excel of CN77]",
+    "Key": "ZQA817P002",
+    "Value": "SCP01/ZQA817P002.xlsx"
+  },
+  {
+    "Comment": "BMPSCP001P_DOWNLOAD_InterfaceFormat  ",
+    "Key": "BMPSCP001P",
+    "Value": "SCP01/BMPSCP001TP.xlsx"
+  },
+  {
+    "Comment": "Sale Invoice Information Maintenance (SY2)",
+    "Key": "ZQA801PSTP",
+    "Value": "SY12/ZQA801PSTP.xlsx"
+  },
+  {
+    "Comment": " Confirmed and Maintenance ED for Local part   ",
+    "Key": "ZVG940Z006TP",
+    "Value": "INBLP/ZVG940Z006TP.xlsx"
+  },
+  {
+    "Comment": "Customs Scrap part maintenenace of CN77",
+    "Key": "ZQA818P002",
+    "Value": "SCP01/ZQA818P002.xlsx"
+  },
+  {
+    "Comment": "(4-1) Update and Transfer customs invoice for Export declaration",
+    "Key": "ZVG940Z025TP",
+    "Value": "INBLP/ZVG940Z025TP.xlsx"
+  },
+  {
+    "Comment": "JTEPA Part List Master Data",
+    "Key": "MASJT001TP",
+    "Value": "IMPJT/MASJT001TP.xlsx"
+  },
+  {
+    "Comment": "Maintenance JTEPA Planning part Data Screen",
+    "Key": "CHKJT003TP",
+    "Value": "IMPJT/CHKJT003TP.xlsx"
+  },
+  {
+    "Comment": "Bailment Part of Product Control ",
+    "Key": "ZRH150TP01",
+    "Value": "BMPC/ZRH150TP01.xlsx"
+  },
+  {
+    "Comment": "Bailment Supply Part ",
+    "Key": "PST001TP001",
+    "Value": "BMPC/PST001TP001.xlsx"
+  },
+  {
+    "Comment": "Upload and compare customs invoice from MOL",
+    "Key": "ZVG940Z026",
+    "Value": "GENASP/ZVG940Z026TP.xlsx"
+  },
+  {
+    "Comment": "Upload MC CO Data ",
+    "Key": "GENAO004TP",
+    "Value": "IMPJT/GENAO004TP.xlsx"
+  },
+  {
+    "Comment": "Upload AAT Physical Balance within period from Excel file",
+    "Key": "ZQA882P01",
+    "Value": "ADJ/ZQA882P01.xlsx"
+  },
+  {
+    "Comment": "Upload Gain&Loss of Inventory stock Free zone",
+    "Key": "ZQA883P01",
+    "Value": "ADJ/ZQA883P01.xlsx"
+  },
+  {
+    "Comment": "Upload pay duty part bailment(Issue bailment&petition)",
+    "Key": "BMPISS001P",
+    "Value": "BMPC/BMPISS001PTP.xlsx"
+  },
+  {
+    "Comment": "Upload NG part bailment(Issue petition)",
+    "Key": "BMPISS002P",
+    "Value": "BMPC/BMPISS002PTP.xlsx"
+  },
+  {
+    "Comment": "Upload & Calculate refund of Reserve invoice",
+    "Key": "CPEEA005P",
+    "Value": "IMPJT/CPEEA005PTP.xlsx"
+  },
+  {
+    "Comment": "Upload Generate Shipment SY1 To SY2 Process",
+    "Key": "ZQA825P02",
+    "Value": "SY12/ZQA825P02TP.xlsx"
+  },
+  {
+    "Comment": "Tooling&Machine Information maintenance",
+    "Key": "ZQM710TP001",
+    "Value": "TML01/ZQM710TP001.xlsx"
+  },
+  {
+    "Comment": "Product List Code Master (Production) Maintenance ",
+    "Key": "ZRH160P",
+    "Value": "MAS/ZRH160TP.xlsx"
+  },
+  {
+    "Comment": "Upload & Issue Bailment Common Model Maintenance ",
+    "Key": "BMPPT001P",
+    "Value": "BMPC/BMPPT001PTP.xlsx"
+  },
+  {
+    "Comment": "Tooling&Machine Tariff Information maintenance",
+    "Key": "ZQM712TP001",
+    "Value": "TML01/ZQM712TP001.xlsx"
+  },
+  {
+    "Comment": "Tooling&Machine Import Tariff Duty Rate",
+    "Key": "ZQM713TP001",
+    "Value": "TML01/ZQM713TP001.xlsx"
+  },
+  {
+    "Comment": "Import Tariff Duty Rate (By Part) Information ",
+    "Key": "ZQM013TP001",
+    "Value": "MAS/ZQM013TP001.xlsx"
+  },
+  {
+    "Comment": "Transfer Import Invoice to Customs Invoice By Manual ",
+    "Key": "ZVG840TP002",
+    "Value": "InbAsn/ZVG840TP002.xlsx"
+  },
+  {
+    "Comment": "Customs Invoice Information Maintenance Manual (Duty) ",
+    "Key": "ZVG840TP003",
+    "Value": "InbAsn/ZVG840TP003.xlsx"
+  }
+  ,
+  {
+    "Comment": "Generate New ECN Part Change ",
+    "Key": "ZRA070TP001",
+    "Value": "CFL/ZRA070TP001.xlsx"
+  }
+]
