@@ -704,6 +704,7 @@
     <Content Include="fonts\OpenSans\Trirong-Light\Trirong-Light.ttf" />
     <Content Include="fonts\OpenSans\Trirong-Light\Trirong-Light.woff" />
     <Content Include="fonts\OpenSans\Trirong-Light\Trirong-Light.woff2" />
+    <Content Include="Uploads\Image\513327.jpg" />
     <Content Include="Uploads\Image\bgFz2.jpg" />
     <Content Include="Uploads\Image\bootstrap-colorpicker\alpha-horizontal.png" />
     <Content Include="Uploads\Image\bootstrap-colorpicker\alpha.png" />
@@ -712,6 +713,7 @@
     <Content Include="Uploads\Image\bootstrap-colorpicker\saturation.png" />
     <Content Include="Uploads\Image\logo\logoFz_74x40.png" />
     <Content Include="Uploads\Image\pagenotfound.png" />
+    <Content Include="Uploads\Image\logo\unnamed.png" />
     <Content Include="Views\Partials\_StandardOperateData.cshtml" />
     <Content Include="Reports\MasterPage\ReportMasterLayout.Master" />
     <Content Include="Views\Partials\_StandardField.cshtml" />
