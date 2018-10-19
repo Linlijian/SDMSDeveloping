@@ -14,6 +14,10 @@
     "Comment": "Server DB Name",
     "Name": "WIN-GD24EEJ5ODK",
     "ConnectionString": "WIN-GD24EEJ5ODK_DEV"
+  },
+    {
+    "Comment": "Kuuuyy",
+    "Name": "WIN-GD24EEJ5ODK",
+    "ConnectionString": "WIN-GD24EEJ5ODK_DEV"
   }
-
 ]
