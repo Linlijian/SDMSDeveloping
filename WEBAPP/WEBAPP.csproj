@@ -790,6 +790,7 @@
     <Content Include="Areas\SEC\Views\SEC015P001\Edit.cshtml" />
     <Content Include="Areas\SEC\Views\SEC015P001\Index.cshtml" />
     <None Include="Properties\PublishProfiles\A.pubxml" />
+    <None Include="Properties\PublishProfiles\chang.pubxml" />
     <None Include="Properties\PublishProfiles\March.pubxml" />
     <None Include="Reports\DataSet\DemoReport.xsd">
       <Generator>MSDataSetGenerator</Generator>
