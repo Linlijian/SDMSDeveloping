@@ -148,7 +148,7 @@ namespace WEBAPP.Areas.Users.Controllers
                 log.Error(da.DTO.Result.ResultMsg);
                 return RedirectToAction("SignOut");
             }
-            Session[SessionSystemName.SYS_COM_CODE] = da.DTO.Model.COM_CODE;
+            Session[SessionSystemName.SYS_COM_CODE] = da.DTO.Model.COM_CODE.Trim();
             Session[SessionSystemName.SYS_USER_ID] = da.DTO.Model.USER_ID;
             Session[SessionSystemName.SYS_USER_FNAME_TH] = da.DTO.Model.USER_FNAME_TH;
             Session[SessionSystemName.SYS_USER_FNAME_EN] = da.DTO.Model.USER_FNAME_EN;

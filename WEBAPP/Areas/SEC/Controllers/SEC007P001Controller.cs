@@ -113,7 +113,7 @@ namespace WEBAPP.Areas.SEC.Controllers
             {
                 localModel = da.DTO.Model;
             }
-
+            COM_CODE = COM_CODE.Trim();
             localModel.SYS_CODE_MODEL = GetDDLCenter(DDLCenterKey.DD_VSMS_SYSTEM_001, new VSMParameter(COM_CODE));
             return View("ConfPrg", localModel);
         }
@@ -135,6 +135,8 @@ namespace WEBAPP.Areas.SEC.Controllers
             {
                 localModel = da.DTO.Model;
             }
+
+            COM_CODE = COM_CODE.Trim();
             localModel.SYS_GROUP_NAME_MODEL = GetDDLCenter(DDLCenterKey.DD_VSMS_USRGROUP_003, new VSMParameter(COM_CODE), new VSMParameter(USG_ID));
             return View("ConfSysSeq", localModel);
         }
@@ -156,6 +158,7 @@ namespace WEBAPP.Areas.SEC.Controllers
             {
                 localModel = da.DTO.Model;
             }
+            COM_CODE = COM_CODE.Trim();
             localModel.SYS_GROUP_NAME_MODEL = GetDDLCenter(DDLCenterKey.DD_VSMS_USRGROUP_003, new VSMParameter(COM_CODE), new VSMParameter(USG_ID));
             return View("ConfPrgSeq", localModel);
         }
