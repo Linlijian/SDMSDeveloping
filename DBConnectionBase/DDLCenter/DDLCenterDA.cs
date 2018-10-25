@@ -32,7 +32,7 @@ namespace DataAccess
             parameters.AddParameter("pWhereClause", dto.Parameter.WhereClause);
             parameters.AddParameter("pOrderBy", dto.Parameter.OrderBy);
 
-            var result = _DBMangerNoEF.ExecuteDataSet("SP_DROPDOWNLP0201", parameters);
+            var result = _DBMangerNoEF.ExecuteDataSet("SP_DROPDOWNLIST", parameters);
             var error_code = result.OutputData["error_code"];
             var record_count = result.OutputData["record_count"];
 
