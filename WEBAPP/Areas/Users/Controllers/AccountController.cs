@@ -66,12 +66,13 @@ namespace WEBAPP.Areas.Users.Controllers
 
         [HttpGet]
         [AuthAttribute]
-        public ActionResult SignIn(string returnUrl)
+        public ActionResult SignIn(string returnUrl, string Username, string Password)
         {
             ViewBag.message = string.Empty;
             ViewBag.messageHeader = string.Empty;
-            string cdsid = string.Empty;
-            
+            //string cdsid = string.Empty;
+            string cdsid = Username;
+
             //ตรวจสอบการ auth user
             if (!string.IsNullOrEmpty(Request.ServerVariables["AUTH_USER"].ToString().Trim()))
             {
