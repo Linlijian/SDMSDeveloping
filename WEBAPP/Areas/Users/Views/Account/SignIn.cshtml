@@ -1,11 +1,15 @@
 ﻿@using FluentBootstrap
 @using WEBAPP.Helper
 @using UtilityLib
+@using WEBAPP.Areas.Users.Models
+@model LoginViewModel
 
-@model System.Web.Mvc.HandleErrorInfo
+@*@model System.Web.Mvc.HandleErrorInfo*@
+
 
 @{
-    Layout = null;
+    // Layout = null;
+    Layout = "~/Views/Shared/_LoginPartial.cshtml";
 }
 
 @using (var form = Html.Bootstrap().Form().SetHorizontal().Begin())
@@ -20,6 +24,12 @@
         using (rowMain.GridColumn(12).AddStyle("font-size", "1em").AddStyle("color", "red").SetXs(12).Begin())
         {
             <div>@Html.Label("Message : ", new { style = "color:#000000" }) @ViewBag.message</div>
+        }
+        using (rowMain.GridColumn(12).Begin())
+        {
+           @form.InputFor(a => a.Username)
+           @form.InputFor(a => a.Password)
+         
         }
     }
 }

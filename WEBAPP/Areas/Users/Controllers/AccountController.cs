@@ -71,29 +71,37 @@ namespace WEBAPP.Areas.Users.Controllers
             ViewBag.message = string.Empty;
             ViewBag.messageHeader = string.Empty;
             string cdsid = string.Empty;
-
+            
+            //ตรวจสอบการ auth user
             if (!string.IsNullOrEmpty(Request.ServerVariables["AUTH_USER"].ToString().Trim()))
             {
-                cdsid = Request.ServerVariables["AUTH_USER"].ToString().Split('\\')[1];
+               // cdsid = Request.ServerVariables["AUTH_USER"].ToString().Split('\\')[1];
+                cdsid = Request.ServerVariables["AUTH_USER"].ToString().Split('\\')[0];
             }
 
+            //เก็บค่าที่ auth user ไว้ที่ cdsid เพื่อเช็๕ใน VSMS_USER
             SEC006P001Model dsSys = GET_VSMS_USER(cdsid);
 
+            //ถ้าหาเจอ
             if (!dsSys.USER_ID.IsNullOrEmpty())
             {
+                //ตรวจสอบค่าจาก dsSys ว่าสถานะเป็น DISABLED หรือไม่
                 if (dsSys.IS_DISABLED == "Y")
                 {
                     ViewBag.message = string.Concat("-", "Your account is disabled,please contact your system administrator", "<br/>");
                 }
                 else
                 {
+                    //ถ้าค่า COM_CODE และ USG_ID ใน dsSys ไม่เท่ากับ Null หรือ Empty
                     if (!dsSys.COM_CODE.IsNullOrEmpty() && !dsSys.USG_ID.IsNullOrEmpty())
                     {
+                        //เอาค่า COM_CODE และ USG_ID ไป query ใน vsms_usgroup
                         SEC007P001Model dsUSerGroup = GET_VSMS_USRGROUP(dsSys.COM_CODE, dsSys.USG_ID);
                         if (!dsUSerGroup.COM_CODE.IsNullOrEmpty() &&
                             dsUSerGroup.USG_ID != null &&
                             !dsUSerGroup.USG_CODE.IsNullOrEmpty())
                         {
+                            //ถ้า USG_STATUS = D
                             if (!dsUSerGroup.USG_STATUS.IsNullOrEmpty() &&
                                 dsUSerGroup.USG_STATUS == "D")
                             {
@@ -101,8 +109,10 @@ namespace WEBAPP.Areas.Users.Controllers
                             }
                             else
                             {
+                                //ไม่รู้
                                 FormsAuthentication.SetAuthCookie(cdsid.Trim(), false);
-
+                                
+                                //เก็บ secssion
                                 LogInResult enmLogInResult = CheckUserLogInForWindowAuthen(cdsid.Trim());
                                 if (enmLogInResult == LogInResult.WrongUserNameOrPassword)
                                 {
@@ -119,6 +129,7 @@ namespace WEBAPP.Areas.Users.Controllers
             }
             else
             {
+                //หา user_id ไม่เจอ
                 ViewBag.message = string.Concat("User ", cdsid, ": Wrong user name or password");
             }
 
@@ -475,7 +486,7 @@ namespace WEBAPP.Areas.Users.Controllers
             //AuthenLogDA.Insert(AuthenLogDA.DTO);
         }
 
-
+        //get ค่าจาก VSMS_USER
         private SEC006P001Model GET_VSMS_USER(string USER_ID)
         {
             var da = new SEC006P001DA();
@@ -512,7 +523,7 @@ namespace WEBAPP.Areas.Users.Controllers
 
             if (da.DTO.Result.IsResult)
             {
-                Session[SessionSystemName.SYS_COM_CODE] = da.DTO.Model.COM_CODE;
+                Session[SessionSystemName.SYS_COM_CODE] = da.DTO.Model.COM_CODE.Trim();
                 Session[SessionSystemName.SYS_USER_ID] = da.DTO.Model.USER_ID;
                 Session[SessionSystemName.SYS_USER_FNAME_TH] = da.DTO.Model.USER_FNAME_TH;
                 Session[SessionSystemName.SYS_USER_FNAME_EN] = da.DTO.Model.USER_FNAME_EN;
