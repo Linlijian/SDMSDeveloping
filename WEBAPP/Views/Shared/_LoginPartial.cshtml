@@ -1,4 +1,6 @@
 ﻿@using Microsoft.AspNet.Identity
+@model WEBAPP.Areas.Users.Models.LoginViewModel
+
 @if (Request.IsAuthenticated)
 {
     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
@@ -6,7 +8,7 @@
     @Html.AntiForgeryToken()
 
     <ul class="nav navbar-nav navbar-right ">
-        <li>
+        <li>    
             @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
         </li>
         <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
@@ -15,8 +17,20 @@
 }
 else
 {
+    @RenderBody() //this content on .cshtml
     <ul class="nav navbar-nav navbar-right">
+        @using (Html.BeginForm("SignIn", "Account", null, FormMethod.Get,
+                              new { enctype = "multipart/form-data" }))
+        {
         <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
         <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+        @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+        }
     </ul>
 }
