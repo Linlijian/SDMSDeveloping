@@ -1,15 +1,12 @@
 ﻿@using FluentBootstrap
 @using WEBAPP.Helper
 @using UtilityLib
-@using WEBAPP.Areas.Users.Models
-@model LoginViewModel
 
-@*@model System.Web.Mvc.HandleErrorInfo*@
+@model System.Web.Mvc.HandleErrorInfo
 
 
 @{
     // Layout = null;
-    Layout = "~/Views/Shared/_LoginPartial.cshtml";
 }
 
 @using (var form = Html.Bootstrap().Form().SetHorizontal().Begin())
@@ -27,8 +24,6 @@
         }
         using (rowMain.GridColumn(12).Begin())
         {
-           @form.InputFor(a => a.Username)
-           @form.InputFor(a => a.Password)
          
         }
     }
