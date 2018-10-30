@@ -16,7 +16,7 @@
     {
         using (rowMain.GridColumn(12).AddStyle("text-align", "center").SetXs(12).Begin())
         {
-            @Html.Bootstrap().Image(Url.Content("~/Uploads/Image/pagenotfound.png"), "Placeholder Image")
+            //@Html.Bootstrap().Image(Url.Content("~/Uploads/Image/pagenotfound.png"), "Placeholder Image")
         }
 
         using (rowMain.GridColumn(12).AddStyle("font-size", "1em").AddStyle("color", "red").SetXs(12).Begin())
@@ -25,7 +25,24 @@
         }
         using (rowMain.GridColumn(12).Begin())
         {
-         
+
+        }
+    }
+
+    using (var rowMain = Html.Bootstrap().GridRow().Begin())
+    {
+        using (rowMain.GridColumn(12).AddStyle("text-align", "center").SetXs(12).Begin())
+        {
+            //@Html.Bootstrap().Image(Url.Content("~/Uploads/Image/pagenotfound.png"), "Placeholder Image")
+        }
+
+        using (rowMain.GridColumn(12).AddStyle("font-size", "1em").AddStyle("color", "red").SetXs(12).Begin())
+        {
+            //<div>@Html.Label("Message : ", new { style = "color:#000000" }) @ViewBag.message</div>
+        }
+        using (rowMain.GridColumn(12).Begin())
+        {
+
         }
     }
 }
