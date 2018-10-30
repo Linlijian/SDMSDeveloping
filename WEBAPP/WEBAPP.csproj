@@ -679,6 +679,10 @@
     <Content Include="Content\bootstrap-datepicker.min.css.map" />
     <Content Include="Scripts\DataTables\datatables.extend.js" />
     <Content Include="Scripts\fontawesome-iconpicker.min.js" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\plugin\bootstrap-multiselect.min.js" />
     <Content Include="Scripts\plugin\bootstrap-select\css\bootstrap-select.min.css" />
     <Content Include="Scripts\plugin\bootstrap-select\js\bootstrap-select.min.js" />
@@ -791,6 +795,9 @@
     <Content Include="Areas\SEC\Views\SEC015P001\Add.cshtml" />
     <Content Include="Areas\SEC\Views\SEC015P001\Edit.cshtml" />
     <Content Include="Areas\SEC\Views\SEC015P001\Index.cshtml" />
+    <Content Include="Areas\Users\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Users\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Users\Views\Account\SelectModuleFirst.cshtml" />
     <None Include="Properties\PublishProfiles\A.pubxml" />
     <None Include="Properties\PublishProfiles\chang.pubxml" />
     <None Include="Properties\PublishProfiles\March.pubxml" />
@@ -946,6 +953,7 @@
     <Content Include="Reports\DataSet\Users\Account.xss">
       <DependentUpon>Account.xsd</DependentUpon>
     </Content>
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Scripts\jquery-1.12.4.intellisense.js" />
     <Content Include="Scripts\jquery-1.12.4.min.js" />
     <None Include="Scripts\jquery-2.2.4.intellisense.js" />
@@ -1026,7 +1034,6 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Views\AdminBase\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
-    <Folder Include="Areas\Users\Views\Shared\" />
     <Folder Include="Areas\Ux\Views\Autocomplete\" />
     <Folder Include="Areas\Ux\Views\Other\" />
     <Folder Include="Areas\Ux\Views\Report\" />

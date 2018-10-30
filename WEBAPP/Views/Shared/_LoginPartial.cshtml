@@ -17,15 +17,33 @@
 }
 else
 {
-    @RenderBody() //this content on .cshtml
+    <center>
+    @RenderBody() @*//this content on .cshtml*@
     <ul class="nav navbar-nav navbar-right">
         @using (Html.BeginForm("SignIn", "Account", null, FormMethod.Get,
                               new { enctype = "multipart/form-data" }))
         {
-        <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
-        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
-        @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
-        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+        
+         @Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" }) 
+        
+        
+         @Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <label>Login</label>
+            <br>
+            @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+            <br>
+            <br>
+            <label>Password</label>
+            <br>
+            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+
+            <br>
+
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Create" class="btn btn-default" />
@@ -33,4 +51,39 @@ else
         </div>
         }
     </ul>
+        </center>
 }
+
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+        width: 20%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    input[type=submit] {
+        /*display: inline-block;
+        border: 2px solid #000000;
+        padding: 14px 20px;
+        color:black;
+        text-decoration: none;
+        transition: 0.3s;*/
+
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 10%;
+}
+
+</style>

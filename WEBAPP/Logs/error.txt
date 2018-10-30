@@ -57,86 +57,68 @@ Path : SEC/SEC006P001/Edit
 Error Messages: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
 
-ERROR 2018-10-19 18:38:46,068 BaseController.OnException - 
+ERROR 2018-10-27 00:16:27,689 BaseController.OnException - 
 Path : Users/Account/SignIn
-Error Messages: Index was outside the bounds of the array.
+Error Messages: Object reference not set to an instance of an object.
 
-ERROR 2018-10-20 03:22:13,133 BaseController.OnException - 
+ERROR 2018-10-27 16:04:49,014 BaseController.OnException - 
 Path : Users/Account/SignIn
-Error Messages: Index was outside the bounds of the array.
+Error Messages: Unexpected "using" keyword after "@" character.  Once inside code, you do not need to prefix constructs like "using" with "@".
 
-ERROR 2018-10-20 03:55:21,893 BaseController.OnException - 
+
+ERROR 2018-10-27 16:04:52,428 AccountController.SignIn2 - The network path was not found
+ERROR 2018-10-27 16:04:52,515 BaseController.OnException - 
 Path : Users/Account/SignIn
-Error Messages: Index was outside the bounds of the array.
+Error Messages: Unexpected "using" keyword after "@" character.  Once inside code, you do not need to prefix constructs like "using" with "@".
 
-ERROR 2018-10-22 13:55:32,050 AccountController.SignIn2 - The system cannot find the file specified
-ERROR 2018-10-22 13:55:54,631 AccountController.SignIn2 - The system cannot find the file specified
-ERROR 2018-10-22 13:57:17,967 AccountController.SignIn2 - The system cannot find the file specified
-ERROR 2018-10-22 14:38:51,992 BaseController.OnException - 
-Path : Users/Account/SignIn2
-Error Messages: Object reference not set to an instance of an object.
 
-ERROR 2018-10-22 14:40:02,322 BaseController.OnException - 
-Path : Users/Account/SignIn2
-Error Messages: Object reference not set to an instance of an object.
-
-ERROR 2018-10-22 14:41:20,590 BaseController.OnException - 
-Path : Users/Account/SignIn2
-Error Messages: Object reference not set to an instance of an object.
-
-ERROR 2018-10-22 14:47:33,456 BaseController.OnException - 
-Path : Users/Account/SignIn2
-Error Messages: Object reference not set to an instance of an object.
-
-ERROR 2018-10-22 14:48:02,222 BaseController.OnException - 
-Path : Users/Account/SignIn2
-Error Messages: Object reference not set to an instance of an object.
-
-ERROR 2018-10-22 14:48:02,222 BaseController.OnException - 
-Path : Users/Account/SignIn2
-Error Messages: Object reference not set to an instance of an object.
-
-ERROR 2018-10-22 14:49:42,422 BaseController.OnException - 
-Path : Users/Account/SignIn2
-Error Messages: Object reference not set to an instance of an object.
-
-ERROR 2018-10-22 14:51:42,280 BaseController.OnException - 
-Path : Users/Account/SignIn2
-Error Messages: Object reference not set to an instance of an object.
-
-ERROR 2018-10-22 14:52:43,691 BaseController.OnException - 
-Path : Users/Account/SignIn2
-Error Messages: Object reference not set to an instance of an object.
-
-ERROR 2018-10-22 14:54:32,551 BaseController.OnException - 
-Path : Users/Account/SignIn2
-Error Messages: Object reference not set to an instance of an object.
-
-ERROR 2018-10-22 14:57:26,722 BaseController.OnException - 
-Path : Users/Account/SignIn2
-Error Messages: Object reference not set to an instance of an object.
-
-ERROR 2018-10-22 14:58:30,253 BaseController.OnException - 
-Path : Users/Account/SignIn2
-Error Messages: Object reference not set to an instance of an object.
-
-ERROR 2018-10-22 15:00:31,410 BaseController.OnException - 
-Path : Users/Account/SignIn2
-Error Messages: Object reference not set to an instance of an object.
-
-ERROR 2018-10-22 15:01:05,010 BaseController.OnException - 
-Path : Users/Account/SignIn2
-Error Messages: Object reference not set to an instance of an object.
-
-ERROR 2018-10-22 15:40:09,844 BaseController.OnException - 
-Path : Users/Account/SignIn2
-Error Messages: Object reference not set to an instance of an object.
-
-ERROR 2018-10-22 16:12:42,026 BaseController.OnException - 
+ERROR 2018-10-27 16:21:44,917 BaseController.OnException - 
 Path : Users/Account/SignIn
-Error Messages: Index was outside the bounds of the array.
+Error Messages: The else block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
 
-ERROR 2018-10-22 16:12:51,711 BaseController.OnException - 
+
+ERROR 2018-10-27 17:21:16,080 BaseController.OnException - 
 Path : Users/Account/SignIn
-Error Messages: Index was outside the bounds of the array.
+Error Messages: The else block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+
+ERROR 2018-10-27 17:42:57,277 BaseController.OnException - 
+Path : Users/Account/SignIn
+Error Messages: The else block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+
+ERROR 2018-10-27 18:23:35,634 AccountController.SignIn2 - The network path was not found
+ERROR 2018-10-27 18:26:27,534 AccountController.SignIn2 - The network path was not found
+ERROR 2018-10-27 18:28:43,356 AccountController.SignIn2 - The network path was not found
+ERROR 2018-10-28 17:23:35,965 BaseController.OnException - 
+Path : Users/Account/SignIn
+Error Messages: A space or line break was encountered after the "@" character.  Only valid identifiers, keywords, comments, "(" and "{" are valid at the start of a code block and they must occur immediately following "@" with no space in between.
+
+
+ERROR 2018-10-28 17:36:33,909 BaseController.OnException - 
+Path : Users/Account/SignIn
+Error Messages: A space or line break was encountered after the "@" character.  Only valid identifiers, keywords, comments, "(" and "{" are valid at the start of a code block and they must occur immediately following "@" with no space in between.
+
+
+ERROR 2018-10-28 17:36:49,837 BaseController.OnException - 
+Path : Users/Account/SignIn
+Error Messages: A space or line break was encountered after the "@" character.  Only valid identifiers, keywords, comments, "(" and "{" are valid at the start of a code block and they must occur immediately following "@" with no space in between.
+
+
+ERROR 2018-10-28 23:22:58,234 BaseController.OnException - 
+Path : Users/Account/SignIn
+Error Messages: Cannot invoke a non-delegate type
+
+ERROR 2018-10-28 23:41:28,269 BaseController.OnException - 
+Path : Users/Account/SignIn
+Error Messages: The "RenderBody" method has not been called for layout page "~/Views/Shared/_LoginPartial.cshtml".
+
+ERROR 2018-10-30 14:33:04,342 BaseController.OnException - 
+Path : Users/Account/SignIn
+Error Messages: D:\myproject\SDMSDeveloping\WEBAPP\Views\Shared\_LoginPartial.cshtml(37): error CS1525: Invalid expression term '}'
+
+ERROR 2018-10-30 16:54:21,539 BaseController.OnException - 
+Path : Admin/Default/Index
+Error Messages: Value cannot be null.
+Parameter name: source
 
