@@ -5,7 +5,7 @@ using DataAccess.SEC;
 
 namespace DataAccess.Users
 {
-    [Serializable]
+    [Serializable] 
     public class UserDTO : BaseDTO
     {
         public UserDTO()
