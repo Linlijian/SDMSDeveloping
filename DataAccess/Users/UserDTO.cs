@@ -19,8 +19,9 @@ namespace DataAccess.Users
 
     public class UserExecuteType : DTOExecuteType
     {
-        public const string GetUser = "GetUser";
+        public const string GetUser = "GetUser"; 
         public const string GetConfigGeraral = "GetConfigGeraral";
+        public const string GetConfigSYS = "GetConfigSYS";
     }
 
 

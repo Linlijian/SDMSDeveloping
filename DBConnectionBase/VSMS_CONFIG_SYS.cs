@@ -12,14 +12,17 @@ namespace DataAccess
     using System;
     using System.Collections.Generic;
     
-    public partial class VSMS_USERCOM
+    public partial class VSMS_CONFIG_SYS
     {
         public string COM_CODE { get; set; }
-        public string USER_ID { get; set; }
-        public string CRET_BY { get; set; }
-        public Nullable<System.DateTime> CRET_DATE { get; set; }
-        public string MNT_BY { get; set; }
-        public Nullable<System.DateTime> MNT_DATE { get; set; }
-        public Nullable<decimal> USG_ID { get; set; }
+        public decimal ID { get; set; }
+        public string NAME { get; set; }
+        public Nullable<int> SEQUENCE { get; set; }
+        public string SYS_CODE { get; set; }
+        public string STR_VALUE { get; set; }
+        public Nullable<int> INT_VALUE { get; set; }
+        public Nullable<decimal> DEC_VALUE { get; set; }
+        public string IMG { get; set; }
+        public string IMG_COLOR { get; set; }
     }
 }

@@ -121,7 +121,8 @@ namespace WEBAPP.Areas.Users.Controllers
                                 }
                                 else if (enmLogInResult == LogInResult.Success)
                                 {
-                                    return RedirectToAction("SelectModule");
+                                    //return RedirectToAction("SelectModule");
+                                    return RedirectToAction("SelectSystem");
                                 }
                             }
                         }
@@ -189,7 +190,42 @@ namespace WEBAPP.Areas.Users.Controllers
 
             return RedirectToAction("SelectModule");
         }
-        
+
+        [HttpGet]
+        [AuthAttribute]
+        public ActionResult SelectSystem()
+        {
+            if (SessionHelper.SYS_USER_ID.IsNullOrEmpty())
+            {
+                return RedirectToAction("SignIn");
+            }
+
+            var da = new UserDA();
+            da.DTO.Execute.ExecuteType = UserExecuteType.GetConfigSYS;
+            da.DTO.Model.COM_CODE = SessionHelper.SYS_COM_CODE;
+            da.DTO.Model.USG_ID = SessionHelper.SYS_USG_ID;
+            da.Select(da.DTO);
+            SessionHelper.SYS_IsMultipleGroup = (da.DTO.ConfigGerarals.Count > 1);
+            return View(da.DTO.ConfigGerarals);
+        }
+
+        [HttpGet]
+        [AuthAttribute]
+        public ActionResult SelectedSystem(string SYS_CODE)
+        {
+            Session[SessionSystemName.SYS_SYSTEM] = SYS_CODE;
+
+            var da = new SECBaseDA();
+            da.DTO.Execute.ExecuteType = SECBaseExecuteType.GetMenuSystem;
+            da.DTO.Menu.COM_CODE = SessionSystemName.SYS_SYSTEM;
+            da.DTO.Menu.USG_ID = SessionHelper.SYS_USG_ID;
+            da.DTO.Menu.SYS_CODE = SYS_CODE;
+            da.Select(da.DTO);
+            Session[SessionSystemName.SYS_MENU] = da.DTO.Menus;
+            //return Redirect(FormsAuthentication.DefaultUrl);
+            return RedirectToAction("SelectModule");
+        }
+
         [HttpGet]
         [AuthAttribute]
         public ActionResult SelectModule()

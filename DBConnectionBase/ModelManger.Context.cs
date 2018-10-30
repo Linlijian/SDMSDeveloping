@@ -45,5 +45,6 @@ namespace DataAccess
         public virtual DbSet<VSMS_SYS_PGC> VSMS_SYS_PGC { get; set; }
         public virtual DbSet<VSMS_TITLE> VSMS_TITLE { get; set; }
         public virtual DbSet<VSMS_CONFIG_FTP> VSMS_CONFIG_FTP { get; set; }
+        public virtual DbSet<VSMS_CONFIG_SYS> VSMS_CONFIG_SYS { get; set; }
     }
 }

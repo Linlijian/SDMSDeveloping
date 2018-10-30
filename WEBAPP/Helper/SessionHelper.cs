@@ -230,6 +230,8 @@ namespace WEBAPP.Helper
         public const string SYS_IsMultipleGroup = "SYS_IsMultipleGroup";
         public const string SYS_ServerDBName = "SYS_ServerDBName";
 
+        public const string SYS_SYSTEM = "SYS_SYSTEM";
+
         public const string SYS_CurrentCulture = "SYS_CurrentCulture";
 
         public const string SYS_ErrorMessage = "SYS_ErrorMessage";

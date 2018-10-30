@@ -20,6 +20,7 @@
         <EntityTypeShape EntityType="AATModel.VSMS_SYS_PGC" Width="1.5" PointX="11.375" PointY="0.75" />
         <EntityTypeShape EntityType="AATModel.VSMS_TITLE" Width="1.5" PointX="11.375" PointY="4.75" />
         <EntityTypeShape EntityType="AATModel.VSMS_CONFIG_FTP" Width="1.5" PointX="5.375" PointY="11.75" />
+        <EntityTypeShape EntityType="AATModel.VSMS_CONFIG_SYS" Width="1.5" PointX="11.375" PointY="8.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

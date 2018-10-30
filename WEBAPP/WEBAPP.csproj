@@ -791,6 +791,8 @@
     <Content Include="Areas\SEC\Views\SEC015P001\Add.cshtml" />
     <Content Include="Areas\SEC\Views\SEC015P001\Edit.cshtml" />
     <Content Include="Areas\SEC\Views\SEC015P001\Index.cshtml" />
+    <Content Include="Areas\Users\Views\Account\LogIn.cshtml" />
+    <Content Include="Areas\Users\Views\Account\SelectSystem.cshtml" />
     <None Include="Properties\PublishProfiles\A.pubxml" />
     <None Include="Properties\PublishProfiles\March.pubxml" />
     <None Include="Reports\DataSet\DemoReport.xsd">

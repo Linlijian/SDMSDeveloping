@@ -29,6 +29,7 @@ namespace DataAccess.Users
             {
                 case UserExecuteType.GetUser: return GetUser(dto);
                 case UserExecuteType.GetConfigGeraral: return GetConfigGeraral(dto);
+                case UserExecuteType.GetConfigSYS: return GetConfigSYS(dto);
             }
             return dto;
         }
@@ -61,6 +62,22 @@ namespace DataAccess.Users
             dto.ConfigGerarals = (from t1 in _DBManger.VSMS_USRGRPPRIV
                                   join t2 in _DBManger.VSMS_CONFIG_GENERAL on new { t1.COM_CODE, t1.SYS_CODE } equals new { t2.COM_CODE, t2.SYS_CODE }
                                   where t1.COM_CODE == dto.Model.COM_CODE && ((decimal?)t1.USG_ID) == dto.Model.USG_ID
+                                  orderby t2.SEQUENCE
+                                  select new ModuleModel
+                                  {
+                                      NAME = t2.NAME,
+                                      SEQUENCE = t2.SEQUENCE,
+                                      IMG = t2.IMG,
+                                      IMG_COLOR = t2.IMG_COLOR
+                                  }).Distinct().ToList();
+
+            return dto;
+        }
+        private UserDTO GetConfigSYS(UserDTO dto)
+        {
+            dto.ConfigGerarals = (from t1 in _DBManger.VSMS_USRGRPPRIV
+                                  join t2 in _DBManger.VSMS_CONFIG_SYS on new { t1.COM_CODE, t1.SYS_CODE } equals new { t2.COM_CODE, t2.SYS_CODE }
+                                  where ((decimal?)t1.USG_ID) == dto.Model.USG_ID
                                   orderby t2.SEQUENCE
                                   select new ModuleModel
                                   {

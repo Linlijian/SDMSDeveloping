@@ -51,6 +51,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web" />
@@ -123,6 +124,9 @@
       <DependentUpon>ModelManger.tt</DependentUpon>
     </Compile>
     <Compile Include="VSMS_CONFIG_GENERAL.cs">
+      <DependentUpon>ModelManger.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VSMS_CONFIG_SYS.cs">
       <DependentUpon>ModelManger.tt</DependentUpon>
     </Compile>
     <Compile Include="VSMS_CTRLLOG.cs">

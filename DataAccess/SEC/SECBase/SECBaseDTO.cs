@@ -17,7 +17,8 @@ namespace DataAccess.SEC
 
     public class SECBaseExecuteType : DTOExecuteType
     {
-        public const string GetMenu = "GetMenu";
+        public const string GetMenu = "GetMenu"; 
         public const string GetBlobCert = "GetBlobCert";
+        public const string GetMenuSystem = "GetMenuSystem";
     }
 }
